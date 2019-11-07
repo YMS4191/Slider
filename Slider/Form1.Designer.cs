@@ -33,10 +33,10 @@
             this.imgList = new System.Windows.Forms.ImageList(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnStart = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLast = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnForward = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.trcSpeed = new System.Windows.Forms.TrackBar();
             this.trcRed = new System.Windows.Forms.TrackBar();
@@ -77,45 +77,49 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // button4
+            // btnLast
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::Slider.Properties.Resources.icons8_end_filled_50px;
-            this.button4.Location = new System.Drawing.Point(713, 464);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 65);
-            this.button4.TabIndex = 1;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLast.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLast.Image = global::Slider.Properties.Resources.icons8_end_filled_50px;
+            this.btnLast.Location = new System.Drawing.Point(713, 464);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(75, 65);
+            this.btnLast.TabIndex = 1;
+            this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
-            // button3
+            // btnNext
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::Slider.Properties.Resources.icons8_fast_forward_26px;
-            this.button3.Location = new System.Drawing.Point(632, 464);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 65);
-            this.button3.TabIndex = 1;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Image = global::Slider.Properties.Resources.icons8_fast_forward_26px;
+            this.btnNext.Location = new System.Drawing.Point(632, 464);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 65);
+            this.btnNext.TabIndex = 1;
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // button2
+            // btnForward
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Slider.Properties.Resources.icons8_rewind_30px;
-            this.button2.Location = new System.Drawing.Point(94, 464);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 65);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForward.Image = global::Slider.Properties.Resources.icons8_rewind_30px;
+            this.btnForward.Location = new System.Drawing.Point(94, 464);
+            this.btnForward.Name = "btnForward";
+            this.btnForward.Size = new System.Drawing.Size(75, 65);
+            this.btnForward.TabIndex = 1;
+            this.btnForward.UseVisualStyleBackColor = true;
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
             // 
-            // button1
+            // btnFirst
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Slider.Properties.Resources.icons8_bank_cards_48px_1;
-            this.button1.Location = new System.Drawing.Point(13, 464);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 65);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnFirst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFirst.Image = global::Slider.Properties.Resources.icons8_bank_cards_48px_1;
+            this.btnFirst.Location = new System.Drawing.Point(13, 464);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(75, 65);
+            this.btnFirst.TabIndex = 1;
+            this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // pictureBox1
             // 
@@ -180,10 +184,10 @@
             this.Controls.Add(this.trcRed);
             this.Controls.Add(this.trcSpeed);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnForward);
+            this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
@@ -203,10 +207,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ImageList imgList;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Button btnForward;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnLast;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.TrackBar trcSpeed;
         private System.Windows.Forms.TrackBar trcRed;
